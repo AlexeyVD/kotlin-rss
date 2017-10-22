@@ -10,7 +10,9 @@ import java.io.Serializable
 
 @Root(name = "rss", strict = false)
 class Rss() : Serializable {
-    @Element(name = "channel") lateinit var channel: Channel
+    @set:Element(name = "channel")
+    @get:Element(name = "channel")
+    lateinit var channel: Channel
 
     constructor(channel: Channel) : this() {
         this.channel = channel

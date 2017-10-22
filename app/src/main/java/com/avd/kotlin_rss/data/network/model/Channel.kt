@@ -10,7 +10,9 @@ import java.io.Serializable
 
 @Root(name = "channel", strict = false)
 class Channel() : Serializable {
-    @ElementList(inline = true, name = "item") lateinit var rssList: List<RssItem>
+    @set:ElementList(inline = true, name = "item")
+    @get:ElementList(inline = true, name = "item")
+    var rssList: List<RssItem> = ArrayList()
 
     constructor(rssList: List<RssItem>) : this() {
         this.rssList = rssList

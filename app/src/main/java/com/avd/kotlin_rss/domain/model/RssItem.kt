@@ -8,10 +8,10 @@ import android.os.Parcelable
  */
 
 data class RssItem (
-        private val title: String,
-        private val description: String,
-        private val pubDate: String,
-        private val link: String) : Parcelable {
+        val title: String,
+        val description: String,
+        val pubDate: String,
+        val link: String) : Parcelable {
 
     constructor(parcel: Parcel) : this(
             parcel.readString(),

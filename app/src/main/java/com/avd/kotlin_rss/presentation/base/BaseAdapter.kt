@@ -1,4 +1,4 @@
-package com.avd.kotlin_rss.presentation.ui.base
+package com.avd.kotlin_rss.presentation.base
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
